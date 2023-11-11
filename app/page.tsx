@@ -1,3 +1,7 @@
 export default function Home() {
-  return <>Hello Blog App!</>;
+  return (
+    <>
+      <h1 className=" text-cyan-500">Hello</h1>
+    </>
+  );
 }
