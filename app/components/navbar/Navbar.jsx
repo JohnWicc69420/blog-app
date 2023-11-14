@@ -17,7 +17,9 @@ const Navbar = () => {
         } h-20 w-full z-50 sticky top-0 right-0 px-8 md:px-32 xl:px-64 py-4 flex items-center justify-between shadow-md`}
       >
         <Social />
-        <h1 className=" font-bold text-2xl cursor-pointer">smagcap</h1>
+        <h1 className="dark:text-[#ddd] font-bold text-2xl cursor-pointer">
+          smagcap
+        </h1>
         <div className="flex items-center gap-[12px]">
           <ThemeToggle />
           <Links />

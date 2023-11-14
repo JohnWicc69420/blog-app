@@ -12,17 +12,7 @@ const ThemeProvider = ({ children }) => {
   }, []);
 
   if (mounted) {
-    return (
-      <div
-        className={
-          theme === "light"
-            ? " bg-[#FFF] text-black"
-            : "bg-[#0f172a] text-[#D2D8E0]"
-        }
-      >
-        {children}
-      </div>
-    );
+    return <div className={theme}>{children}</div>;
   }
 };
 
