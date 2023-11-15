@@ -17,7 +17,7 @@ const MenuCard = ({ cat, bgColor, hasImage, src }) => {
         >
           {cat}
         </span>
-        <h1 className="text-[#626262] font-medium line-clamp-2">
+        <h1 className="text-[#626262] dark:text-[#a6a6a6] font-medium line-clamp-2">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit.
         </h1>
         <div>
