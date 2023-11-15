@@ -1,17 +1,20 @@
 import React from "react";
 import Image from "next/image";
+import FooterLinks from "./FooterLinks";
 
 const Footer = () => {
   return (
-    <div className="px-8 pb-4 flex items-center justify-between md:px-32 xl:px-64 dark:bg-[#0f172a] dark:text-[#ddd]">
-      <div className=" w-[70%]">
-        <div className="flex items-center gap-4">
+    <div className="pb-6 flex items-center justify-between px-8 md:px-20 xl:px-40 2xl:px-60 dark:bg-[#0f172a] dark:text-[#ddd] gap-8">
+      <div className=" lg:w-[70%] w-full flex flex-col items-start gap-5">
+        <div className="flex items-center gap-3">
           <div className="flex items-center justify-center rounded-full overflow-hidden w-[40px] h-[40px]">
             <img className="object-cover w-full h-full" src="/pfp.png" alt="" />
           </div>
-          <span>Smagcap</span>
+          <span className=" text-xl font-bold text-[#626262] dark:text-[#ddd]">
+            Smagcap
+          </span>
         </div>
-        <div className=" line-clamp-3 text-[#626262] dark:[#a6a6a6] text-sm pb-4">
+        <div className=" line-clamp-3 text-[#626262] dark:text-[#a6a6a6] text-sm xl:text-base">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum aut in
           eligendi perferendis suscipit tempora dolorem vitae voluptatum quo
           reprehenderit at dolore, repellat quia distinctio.
@@ -47,7 +50,9 @@ const Footer = () => {
           />
         </div>
       </div>
-      <div className=" w-[30%] "></div>
+      <div className=" w-[30%] lg:block hidden">
+        <FooterLinks />
+      </div>
     </div>
   );
 };

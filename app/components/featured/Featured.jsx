@@ -17,7 +17,7 @@ const Featured = () => {
          2xl:h-[440px] 2xl:min-w-[550px] "
         >
           <img
-            className="object-cover hover:scale-105 transition-pic h-full w-full"
+            className="object-cover hover:scale-103 transition-pic h-full w-full"
             src="/culture.png"
             alt=""
           />
@@ -26,7 +26,7 @@ const Featured = () => {
           <h1 className=" lg:text-3xl lg:font-bold text-xl line-clamp-2 font-bold">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
           </h1>
-          <p className="text-[#a6a6a6] my-4 lg:text-base text-sm line-clamp-6 font-semibold">
+          <p className="text-[#a6a6a6] my-4 lg:text-base text-sm line-clamp-6 font-medium">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
             nihil sit, omnis, pariatur ratione qui a reprehenderit alias
             asperiores nobis aliquam molestias nulla quos provident dolore saepe
