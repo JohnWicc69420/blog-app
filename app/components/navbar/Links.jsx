@@ -11,7 +11,7 @@ const Links = () => {
   const { status } = useSession();
   return (
     <>
-      <div className="dark:text-[#ddd] lg:flex hidden gap-[10px] items-center">
+      <div className="dark:text-[#ddd] lg:flex hidden gap-3 items-center">
         <Link href="/">Homepage</Link>
         <Link href="/">Contact</Link>
         <Link href="/">About</Link>
