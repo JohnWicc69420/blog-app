@@ -64,7 +64,7 @@ const Menu = () => {
         Chosen by the editor
       </h2>
       <h1 className="text-3xl font-bold mb-8 pt-1">Editor's Pick</h1>
-      <div className="xl:mb-16 mb-8">
+      <div className="xl:pb-16 pb-8">
         <MenuPosts categories={categories} hasImage={true} />
       </div>
     </div>
