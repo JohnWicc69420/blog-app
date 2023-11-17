@@ -1,6 +1,7 @@
 import React from "react";
 import MenuPosts from "./MenuPosts";
 import MenuCategories from "./MenuCategories";
+import { data } from "../cardList/CardList";
 
 const categories = [
   {
@@ -53,19 +54,19 @@ const Menu = () => {
       <h2 className="text-[#626262] dark:text-[#a6a6a6]">What's Hot</h2>
       <h1 className="text-3xl font-bold mb-8 pt-1">Most Popular</h1>
       <div className="xl:mb-16 mb-8">
-        <MenuPosts categories={categories} hasImage={false} />
+        <MenuPosts data={data} hasImage={false} />
       </div>
       <h2 className="text-[#626262] dark:text-[#a6a6a6]"> Discover by topic</h2>
       <h1 className="text-3xl font-bold mb-8 pt-1">Categories</h1>
       <div className="xl:mb-16 mb-8">
-        <MenuCategories categories={categories} />
+        <MenuCategories data={data} />
       </div>
       <h2 className="text-[#626262] dark:text-[#a6a6a6]">
         Chosen by the editor
       </h2>
       <h1 className="text-3xl font-bold mb-8 pt-1">Editor's Pick</h1>
       <div className="xl:pb-16 pb-8">
-        <MenuPosts categories={categories} hasImage={true} />
+        <MenuPosts data={data} hasImage={true} />
       </div>
     </div>
   );
