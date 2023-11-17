@@ -20,9 +20,9 @@ const Navbar = () => {
         <Social />
         <Link
           href="/"
-          className="dark:text-[#ddd] font-bold text-2xl cursor-pointer"
+          className="dark:text-[#ddd] font-bold text-2xl lg:text-3xl cursor-pointer"
         >
-          smagcap
+          LUMINA
         </Link>
         <div className="flex items-center gap-3">
           <ThemeToggle />

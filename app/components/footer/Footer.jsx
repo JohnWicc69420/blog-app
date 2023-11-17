@@ -11,7 +11,7 @@ const Footer = () => {
             <img className="object-cover w-full h-full" src="/pfp.png" alt="" />
           </div>
           <span className=" text-xl font-bold text-[#626262] dark:text-[#ddd]">
-            Smagcap
+            Lumina
           </span>
         </div>
         <div className=" line-clamp-3 text-[#626262] dark:text-[#a6a6a6] text-sm xl:text-base">

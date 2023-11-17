@@ -10,7 +10,7 @@ import { ThemeContextProvider } from "./context/ThemeContext";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Blog App",
+  title: "Lumina Blog",
   description: "Wicc Blog App",
 };
 
