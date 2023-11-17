@@ -14,7 +14,7 @@ const MenuPosts = ({ data, hasImage }) => {
           date={item.date}
           title={item.title}
           desc={item.desc}
-          writer={item.write}
+          writer={item.writer}
           writerImg={item.writerImg}
         />
       ))}
