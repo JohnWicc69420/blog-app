@@ -5,6 +5,7 @@ import { useSearchParams } from "next/navigation";
 import ProfileCard from "./ProfileCard";
 import Image from "next/image";
 import Menu from "../components/menu/Menu";
+import Comments from "../components/comments/Comments";
 
 const page = () => {
   const searchParams = useSearchParams();
@@ -37,9 +38,11 @@ const page = () => {
         </div>
       </div>
       <div className="bottom flex items-start flex-row lg:gap-12 gap-8">
-        <div className="container">
+        <div className="container flex flex-col items-start gap-8">
           <div className="details text-justify">{desc}</div>
-          <div className="comments"></div>
+          <div className="comments">
+            <Comments />
+          </div>
         </div>
         <div className="menu">
           <Menu />

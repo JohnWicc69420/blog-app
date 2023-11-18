@@ -3,7 +3,7 @@ import Card from "../card/Card";
 
 export const data = [
   {
-    id: "1",
+    id: 1,
     writer: "Amelia Sterling",
     writerImg: "/w1.png",
     img: "/coding.png",
@@ -15,7 +15,7 @@ export const data = [
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nihil sit, omnis, pariatur ratione qui a reprehenderit alias asperiores nobis aliquam molestias nulla quos provident dolore saepe sunt sequi? Dolor, obcaecati officiis! Ipsa, eos rem.",
   },
   {
-    id: "2",
+    id: 2,
     writer: "Lucas Hawthorne",
     writerImg: "/w2.png",
     img: "/travel.png",
@@ -27,7 +27,7 @@ export const data = [
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nihil sit, omnis, pariatur ratione qui a reprehenderit alias asperiores nobis aliquam molestias nulla quos provident dolore saepe sunt sequi? Dolor, obcaecati officiis! Ipsa, eos rem.",
   },
   {
-    id: "3",
+    id: 3,
     writer: "Vivian Grace",
     writerImg: "/w3.png",
     img: "/food.png",
@@ -39,7 +39,7 @@ export const data = [
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nihil sit, omnis, pariatur ratione qui a reprehenderit alias asperiores nobis aliquam molestias nulla quos provident dolore saepe sunt sequi? Dolor, obcaecati officiis! Ipsa, eos rem.",
   },
   {
-    id: "4",
+    id: 4,
     writer: "Oliver Westwood",
     writerImg: "/w4.png",
     img: "/style.png",
@@ -51,7 +51,7 @@ export const data = [
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nihil sit, omnis, pariatur ratione qui a reprehenderit alias asperiores nobis aliquam molestias nulla quos provident dolore saepe sunt sequi? Dolor, obcaecati officiis! Ipsa, eos rem.",
   },
   {
-    id: "5",
+    id: 5,
     writer: "Isabella Rainier",
     writerImg: "/w5.png",
     img: "/fashion.png",
@@ -63,7 +63,7 @@ export const data = [
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nihil sit, omnis, pariatur ratione qui a reprehenderit alias asperiores nobis aliquam molestias nulla quos provident dolore saepe sunt sequi? Dolor, obcaecati officiis! Ipsa, eos rem.",
   },
   {
-    id: "6",
+    id: 6,
     writer: "Benjamin Everhart",
     writerImg: "/w6.png",
     img: "/culture.png",
@@ -75,7 +75,7 @@ export const data = [
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nihil sit, omnis, pariatur ratione qui a reprehenderit alias asperiores nobis aliquam molestias nulla quos provident dolore saepe sunt sequi? Dolor, obcaecati officiis! Ipsa, eos rem.",
   },
   {
-    id: "7",
+    id: 7,
     writer: "Amelia Sterling",
     writerImg: "/w1.png",
     img: "/coding.png",
@@ -87,7 +87,7 @@ export const data = [
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nihil sit, omnis, pariatur ratione qui a reprehenderit alias asperiores nobis aliquam molestias nulla quos provident dolore saepe sunt sequi? Dolor, obcaecati officiis! Ipsa, eos rem.",
   },
   {
-    id: "8",
+    id: 8,
     writer: "Lucas Hawthorne",
     writerImg: "/w2.png",
     img: "/travel.png",
@@ -99,7 +99,7 @@ export const data = [
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nihil sit, omnis, pariatur ratione qui a reprehenderit alias asperiores nobis aliquam molestias nulla quos provident dolore saepe sunt sequi? Dolor, obcaecati officiis! Ipsa, eos rem.",
   },
   {
-    id: "9",
+    id: 9,
     writer: "Vivian Grace",
     writerImg: "/w3.png",
     img: "/food.png",
@@ -111,7 +111,7 @@ export const data = [
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nihil sit, omnis, pariatur ratione qui a reprehenderit alias asperiores nobis aliquam molestias nulla quos provident dolore saepe sunt sequi? Dolor, obcaecati officiis! Ipsa, eos rem.",
   },
   {
-    id: "10",
+    id: 10,
     writer: "Oliver Westwood",
     writerImg: "/w4.png",
     img: "/style.png",
@@ -123,7 +123,7 @@ export const data = [
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nihil sit, omnis, pariatur ratione qui a reprehenderit alias asperiores nobis aliquam molestias nulla quos provident dolore saepe sunt sequi? Dolor, obcaecati officiis! Ipsa, eos rem.",
   },
   {
-    id: "11",
+    id: 11,
     writer: "Isabella Rainier",
     writerImg: "/w5.png",
     img: "/fashion.png",
@@ -135,7 +135,7 @@ export const data = [
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nihil sit, omnis, pariatur ratione qui a reprehenderit alias asperiores nobis aliquam molestias nulla quos provident dolore saepe sunt sequi? Dolor, obcaecati officiis! Ipsa, eos rem.",
   },
   {
-    id: "12",
+    id: 12,
     writer: "Benjamin Everhart",
     writerImg: "/w6.png",
     img: "/culture.png",
@@ -147,7 +147,7 @@ export const data = [
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nihil sit, omnis, pariatur ratione qui a reprehenderit alias asperiores nobis aliquam molestias nulla quos provident dolore saepe sunt sequi? Dolor, obcaecati officiis! Ipsa, eos rem.",
   },
   {
-    id: "13",
+    id: 13,
     writer: "Amelia Sterling",
     writerImg: "/w1.png",
     img: "/coding.png",
@@ -159,7 +159,7 @@ export const data = [
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nihil sit, omnis, pariatur ratione qui a reprehenderit alias asperiores nobis aliquam molestias nulla quos provident dolore saepe sunt sequi? Dolor, obcaecati officiis! Ipsa, eos rem.",
   },
   {
-    id: "14",
+    id: 14,
     writer: "Lucas Hawthorne",
     writerImg: "/w2.png",
     img: "/travel.png",
@@ -171,7 +171,7 @@ export const data = [
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nihil sit, omnis, pariatur ratione qui a reprehenderit alias asperiores nobis aliquam molestias nulla quos provident dolore saepe sunt sequi? Dolor, obcaecati officiis! Ipsa, eos rem.",
   },
   {
-    id: "15",
+    id: 15,
     writer: "Vivian Grace",
     writerImg: "/w3.png",
     img: "/food.png",
@@ -183,7 +183,7 @@ export const data = [
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nihil sit, omnis, pariatur ratione qui a reprehenderit alias asperiores nobis aliquam molestias nulla quos provident dolore saepe sunt sequi? Dolor, obcaecati officiis! Ipsa, eos rem.",
   },
   {
-    id: "16",
+    id: 16,
     writer: "Oliver Westwood",
     writerImg: "/w4.png",
     img: "/style.png",
@@ -195,7 +195,7 @@ export const data = [
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nihil sit, omnis, pariatur ratione qui a reprehenderit alias asperiores nobis aliquam molestias nulla quos provident dolore saepe sunt sequi? Dolor, obcaecati officiis! Ipsa, eos rem.",
   },
   {
-    id: "17",
+    id: 17,
     writer: "Isabella Rainier",
     writerImg: "/w5.png",
     img: "/fashion.png",
@@ -207,7 +207,7 @@ export const data = [
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nihil sit, omnis, pariatur ratione qui a reprehenderit alias asperiores nobis aliquam molestias nulla quos provident dolore saepe sunt sequi? Dolor, obcaecati officiis! Ipsa, eos rem.",
   },
   {
-    id: "18",
+    id: 18,
     writer: "Benjamin Everhart",
     writerImg: "/w6.png",
     img: "/culture.png",

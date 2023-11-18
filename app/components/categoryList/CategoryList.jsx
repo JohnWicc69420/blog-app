@@ -3,37 +3,37 @@ import CatBox from "./CatBox";
 
 const data = [
   {
-    id: "1",
+    id: 1,
     img: "/style.png",
     title: "Style",
     bgColor: "bg-[#E0F1FD]",
   },
   {
-    id: "2",
+    id: 2,
     img: "/fashion.png",
     title: "Fashion",
     bgColor: "bg-[#F6E7F1]",
   },
   {
-    id: "3",
+    id: 3,
     img: "/food.png",
     title: "Food",
     bgColor: "bg-[#E4EEE5]",
   },
   {
-    id: "4",
+    id: 4,
     img: "/travel.png",
     title: "Travel",
     bgColor: "bg-[#FCE1DA]",
   },
   {
-    id: "5",
+    id: 5,
     img: "/culture.png",
     title: "Culture",
     bgColor: "bg-[#FDE8D1]",
   },
   {
-    id: "6",
+    id: 6,
     img: "/coding.png",
     title: "Coding",
     bgColor: "bg-[#DDDDFD]",
