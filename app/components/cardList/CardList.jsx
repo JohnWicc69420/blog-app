@@ -220,7 +220,7 @@ export const data = [
   },
 ];
 
-const CardList = ({ slug }) => {
+const CardList = async ({ slug }) => {
   let catData;
   {
     catData =
