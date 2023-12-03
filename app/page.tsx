@@ -11,7 +11,7 @@ export default function Home() {
         <CategoryList />
         <div className="flex items-start w-full gap-6">
           <div className=" lg:w-8/12 w-full">
-            <CardList slug={null} />
+            <CardList slug={null} isCat={false} />
           </div>
           <div className=" w-4/12 hidden lg:block">
             <Menu />

@@ -4,7 +4,7 @@ import Link from "next/link";
 const Card = ({ img, date, cat, title, desc, writer, writerImg }) => {
   return (
     <>
-      <div className="flex items-start gap-6 ">
+      <div className="flex items-start md:gap-6 ">
         <Link
           href={{
             pathname: "/blog",

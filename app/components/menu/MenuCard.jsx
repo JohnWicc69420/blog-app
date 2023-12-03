@@ -35,14 +35,12 @@ const MenuCard = ({
             {cat}
           </span>
           <h1 className="text-[#626262] dark:text-[#a6a6a6] font-medium line-clamp-2">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            {title}
           </h1>
           <div>
-            <span className="text-xs font-medium">John Doe</span>
+            <span className="text-xs font-medium">{writer}</span>
             <span className="text-xs font-medium"> - </span>
-            <span className="text-xs text-[#626262] font-medium">
-              01.09.2023
-            </span>
+            <span className="text-xs text-[#626262] font-medium">{date}</span>
           </div>
         </div>
       </div>

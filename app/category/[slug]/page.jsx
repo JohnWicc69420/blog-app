@@ -1,6 +1,3 @@
-"use client";
-
-import React from "react";
 import CardList from "../../components/cardList/CardList";
 import Menu from "../../components/menu/Menu";
 
@@ -28,7 +25,7 @@ const page = ({ params }) => {
       </h1>
       <div className=" flex items-start w-full pt-8 gap-6">
         <div className=" lg:w-8/12 w-full">
-          <CardList slug={slug} />
+          <CardList slug={slug} isCat={true} />
         </div>
         <div className=" w-4/12 hidden lg:block">
           <Menu />

@@ -1,6 +1,11 @@
 import React from "react";
+import blogs from "@/utils/data";
+import Link from "next/link";
 
-const Featured = () => {
+const Featured = async () => {
+  const randNumber = Math.floor(Math.random() * 18);
+  const data = await blogs();
+  const post = data[randNumber];
   return (
     <>
       <div className="h-full md:pt-10 pt-4 mb-12">
@@ -19,26 +24,37 @@ const Featured = () => {
           >
             <img
               className="object-cover hover:scale-103 transition-pic h-full w-full"
-              src="/culture.png"
+              src={post.img}
               alt=""
             />
           </div>
           <div className="right flex flex-col items-start">
             <h1 className=" lg:text-3xl lg:font-bold text-xl line-clamp-2 font-bold">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              {post.title}
             </h1>
             <p className="text-[#a6a6a6] my-4 lg:text-base text-sm line-clamp-6 font-medium">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
-              nihil sit, omnis, pariatur ratione qui a reprehenderit alias
-              asperiores nobis aliquam molestias nulla quos provident dolore
-              saepe sunt sequi? Dolor, obcaecati officiis! Ipsa, eos rem.
+              {post.desc}
             </p>
-            <button
-              className="bg-[#ECECEC] p-3 font-medium rounded-md 
-            text-sm text-[#000]"
+            <Link
+              href={{
+                pathname: "/blog",
+                query: {
+                  img: post.img,
+                  date: post.date,
+                  title: post.title,
+                  desc: post.desc,
+                  writer: post.writer,
+                  writerImg: post.writerImg,
+                },
+              }}
             >
-              Read More
-            </button>
+              <button
+                className="bg-[#ECECEC] p-3 font-medium rounded-md 
+            text-sm text-[#000]"
+              >
+                Read More
+              </button>
+            </Link>
           </div>
         </div>
       </div>
