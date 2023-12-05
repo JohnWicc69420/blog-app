@@ -7,7 +7,7 @@ import Image from "next/image";
 import Menu from "../components/menu/Menu";
 import Comments from "../components/comments/Comments";
 
-const page = () => {
+const Page = () => {
   const searchParams = useSearchParams();
   const img = searchParams.get("img");
   const date = searchParams.get("date");
@@ -50,4 +50,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
