@@ -38,8 +38,8 @@ const page = () => {
         </div>
       </div>
       <div className="bottom flex items-start flex-row lg:gap-12 gap-8">
-        <div className="container flex flex-col items-start gap-8">
-          <div className="details text-justify">{desc}</div>
+        <div className="container flex flex-col items-start gap-8 mb-4">
+          <div className="details">{desc}</div>
           <Comments />
         </div>
         <div className="menu md:flex hidden">

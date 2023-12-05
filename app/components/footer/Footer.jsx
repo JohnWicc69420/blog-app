@@ -11,13 +11,15 @@ const Footer = () => {
             <img className="object-cover w-full h-full" src="/pfp.png" alt="" />
           </div>
           <span className=" text-xl font-bold text-[#626262] dark:text-[#ddd]">
-            Lumina
+            LUMINA
           </span>
         </div>
-        <div className=" line-clamp-3 text-[#626262] dark:text-[#a6a6a6] text-sm xl:text-base">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum aut in
-          eligendi perferendis suscipit tempora dolorem vitae voluptatum quo
-          reprehenderit at dolore, repellat quia distinctio.
+        <div className=" line-clamp-3 text-[#626262] dark:text-[#a6a6a6] text-sm xl:text-base w-[calc(100%-10%)]">
+          Lumina is a dynamic blog maker that empowers users to effortlessly
+          create and customize their online narratives. With its user-friendly
+          interface and diverse range of features, Lumina ensures a seamless and
+          engaging blogging experience, allowing individuals to share their
+          stories with the world in a visually appealing and impactful way.
         </div>
         <div className="md:flex hidden gap-[10px] items-center w-[250px]">
           <Image

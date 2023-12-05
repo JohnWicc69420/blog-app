@@ -13,8 +13,8 @@ const CatBox = ({ img, title, bgColor }) => {
           <Image
             className="object-cover h-full w-full"
             src={img}
-            height={32}
-            width={32}
+            height={100}
+            width={100}
             alt=""
           />
         </div>
