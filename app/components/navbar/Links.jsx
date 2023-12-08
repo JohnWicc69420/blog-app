@@ -39,7 +39,7 @@ const Links = () => {
         <div
           className=" dark:text-[#ddd] lg:hidden w-full absolute 
         right-0 left-0 top-16 flex flex-col pt-[50%] md:pt-[25%]
-        items-center font-semibold text-2xl gap-7 bg-[#0F172A] h-[100vh]"
+        items-center font-semibold text-2xl gap-7 dark:bg-[#0F172A] bg-white h-[100vh]"
         >
           <Link href="/">Homepage</Link>
           <Link href="/">Contact</Link>
