@@ -4,7 +4,8 @@ import Link from "next/link";
 
 const Featured = async () => {
   const randNumber = Math.floor(Math.random() * 18);
-  const data = await blogs();
+  // const data = await blogs();
+  const data = [0, 0, 0];
   const post = data[randNumber];
   return (
     <>

@@ -3,13 +3,14 @@ import Cards from "./Cards";
 import blogs from "../../../utils/data";
 
 const CardList = async ({ slug, isCat }) => {
-  const data = await blogs();
+  // const data = await blogs();
+  const data = [0, 0, 0];
   let catData;
   {
     catData =
       slug === null
         ? data
-        : (catData = data.filter((item) => item.cat === slug));
+        : (catData = data?.filter((item) => item.cat === slug));
   }
   return (
     <div className="h-full w-full pb-4 mb-8">
