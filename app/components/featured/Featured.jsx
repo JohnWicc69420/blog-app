@@ -24,27 +24,27 @@ const Featured = async () => {
           >
             <img
               className="object-cover hover:scale-103 transition-pic h-full w-full"
-              src={post.img}
+              src={post?.img}
               alt=""
             />
           </div>
           <div className="right flex flex-col items-start">
             <h1 className=" lg:text-3xl lg:font-bold text-xl line-clamp-2 font-bold">
-              {post.title}
+              {post?.title}
             </h1>
             <p className="text-[#a6a6a6] my-4 lg:text-base text-sm line-clamp-6 font-medium">
-              {post.desc}
+              {post?.desc}
             </p>
             <Link
               href={{
                 pathname: "/blog",
                 query: {
-                  img: post.img,
-                  date: post.date,
-                  title: post.title,
-                  desc: post.desc,
-                  writer: post.writer,
-                  writerImg: post.writerImg,
+                  img: post?.img,
+                  date: post?.date,
+                  title: post?.title,
+                  desc: post?.desc,
+                  writer: post?.writer,
+                  writerImg: post?.writerImg,
                 },
               }}
             >

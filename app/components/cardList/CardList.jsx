@@ -3,8 +3,7 @@ import Cards from "./Cards";
 import blogs from "../../../utils/data";
 
 const CardList = async ({ slug, isCat }) => {
-  // const data = await blogs();
-  const data = null;
+  const data = await blogs();
   let catData;
   {
     catData =

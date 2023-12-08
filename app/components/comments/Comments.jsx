@@ -1,5 +1,4 @@
 import React from "react";
-import { useSession } from "next-auth/react";
 import Link from "next/link";
 import CommentBox from "./CommentBox";
 
@@ -55,7 +54,6 @@ const commentsData = [
 ];
 
 const Comments = () => {
-  const { status } = useSession();
   return (
     <>
       <div className="text-[#626262] dark:text-[#a6a6a6] flex flex-col items-start gap-10">
