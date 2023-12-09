@@ -6,7 +6,7 @@ const MenuCategories = ({ data }) => {
     <div className="flex flex-wrap items-center gap-4 ">
       {data.slice(0, 6).map((item) => (
         <MenuCatBox
-          key={item.id}
+          key={item._id}
           title={item.cat}
           bgColor={item.lightBgColor}
         />

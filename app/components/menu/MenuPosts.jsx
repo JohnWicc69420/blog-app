@@ -6,7 +6,8 @@ const MenuPosts = ({ data, hasImage }) => {
     <div className="flex flex-col items-start gap-6">
       {data.slice(0, 4).map((item) => (
         <MenuCard
-          key={item.id}
+          key={item._id}
+          id={item._id}
           cat={item.cat}
           bgColor={item.bgColor}
           hasImage={hasImage}

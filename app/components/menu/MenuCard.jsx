@@ -1,24 +1,9 @@
 import React from "react";
 import Link from "next/link";
 
-const MenuCard = ({
-  cat,
-  bgColor,
-  hasImage,
-  img,
-  date,
-  title,
-  desc,
-  writer,
-  writerImg,
-}) => {
+const MenuCard = ({ id, cat, bgColor, hasImage, img, date, title, writer }) => {
   return (
-    <Link
-      href={{
-        pathname: "/blog",
-        query: { img, date, title, desc, writer, writerImg },
-      }}
-    >
+    <Link href={`blog/${id}`}>
       <div className="flex items-center gap-4 h-full w-full cursor-pointer">
         {hasImage && (
           <div>
@@ -27,10 +12,9 @@ const MenuCard = ({
             </div>
           </div>
         )}
-
         <div className="flex flex-col items-start">
           <span
-            className={`${bgColor} text-[#fff] text-xs py-1 px-2 rounded-xl mb-2`}
+            className={` text-[#fff] ${bgColor} text-xs py-1 px-2 rounded-xl mb-2`}
           >
             {cat}
           </span>
