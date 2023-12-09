@@ -11,7 +11,8 @@ const Cards = ({ catData, isCat }) => {
         {catData.slice(prevNum, nextNum).map((item) => (
           <Card
             featured={false}
-            key={item.id}
+            key={item._id}
+            id={item._id}
             img={item.img}
             date={item.date}
             cat={item.cat}

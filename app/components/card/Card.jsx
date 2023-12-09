@@ -1,16 +1,11 @@
 import React from "react";
 import Link from "next/link";
 
-const Card = ({ img, date, cat, title, desc, writer, writerImg }) => {
+const Card = ({ id, img, date, cat, title, desc }) => {
   return (
     <>
       <div className="flex items-start md:gap-6 ">
-        <Link
-          href={{
-            pathname: "/blog",
-            query: { img, date, title, desc, writer, writerImg },
-          }}
-        >
+        <Link href={`/blog/${id}`}>
           <div
             className="left hidden md:flex items-center justify-center overflow-hidden
         h-[240px] min-w-[300px] max-w-[300px]
@@ -37,12 +32,7 @@ const Card = ({ img, date, cat, title, desc, writer, writerImg }) => {
           <div className=" xl:line-clamp-4 line-clamp-3 text-[#626262] dark:text-[#a6a6a6] text-sm md:text-base">
             {desc}
           </div>
-          <Link
-            href={{
-              pathname: "/blog",
-              query: { img, date, title, desc, writer, writerImg },
-            }}
-          >
+          <Link href={`/blog/${id}`}>
             <button className=" font-semibold text-sm md:text-base mt-4 border-b-[#dc143c] border-b-2">
               Read More
             </button>

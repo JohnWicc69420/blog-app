@@ -1,11 +1,9 @@
+const BASE_URL = "https://main--blog-app64209.netlify.app";
 const getData = async () => {
   try {
-    const res = await fetch(
-      "https://main--blog-app64209.netlify.app/api/blogs",
-      {
-        cache: "no-store",
-      }
-    );
+    const res = await fetch("http://localhost:3000/api/blogs", {
+      cache: "no-store",
+    });
     return res.json();
   } catch (error) {
     console.log("Could Not Fetch Blogs: ", error);
