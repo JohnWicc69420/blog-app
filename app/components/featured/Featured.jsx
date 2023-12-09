@@ -16,11 +16,14 @@ const Featured = async () => {
             my stories and creative ideas.
           </div>
         </p>
-        <div className="bottom flex items-center pt-10 gap-10">
+        <div
+          className="bottom flex md:flex-row flex-col items-center
+         md:pt-10 pt-6 md:gap-10 gap-6"
+        >
           <Link href={`blog/${id}`}>
             <div
-              className="left cursor-pointer rounded-3xl hidden md:flex items-center justify-center overflow-hidden
-          h-[280px] min-w-[350px]
+              className="left cursor-pointer rounded-3xl flex items-center justify-center overflow-hidden
+          md:h-[280px] md:min-w-[350px]
          lg:h-[360px] lg:min-w-[450px] 
          2xl:h-[440px] 2xl:min-w-[550px] "
             >

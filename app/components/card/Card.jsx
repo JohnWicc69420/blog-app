@@ -29,7 +29,7 @@ const Card = ({ id, img, date, cat, title, desc }) => {
           <div className=" text-xl line-clamp-2 font-semibold xl:text-2xl xl:font-bold mb-4">
             {title}
           </div>
-          <div className=" xl:line-clamp-4 line-clamp-3 text-[#626262] dark:text-[#a6a6a6] text-sm md:text-base">
+          <div className=" xl:line-clamp-4 md:line-clamp-3 line-clamp-6 text-[#626262] dark:text-[#a6a6a6] text-sm md:text-base">
             {desc}
           </div>
           <Link href={`/blog/${id}`}>
