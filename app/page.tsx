@@ -14,7 +14,7 @@ export default function Home() {
             <CardList slug={null} isCat={false} />
           </div>
           <div className=" w-4/12 hidden lg:block">
-            <Menu />
+            <Menu home={true} />
           </div>
         </div>
       </div>

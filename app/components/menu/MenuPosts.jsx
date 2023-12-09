@@ -1,7 +1,7 @@
 import React from "react";
 import MenuCard from "./MenuCard";
 
-const MenuPosts = ({ data, hasImage }) => {
+const MenuPosts = ({ data, hasImage, home }) => {
   return (
     <div className="flex flex-col items-start gap-6">
       {data.slice(0, 4).map((item) => (
@@ -9,7 +9,6 @@ const MenuPosts = ({ data, hasImage }) => {
           key={item._id}
           id={item._id}
           cat={item.cat}
-          bgColor={item.bgColor}
           hasImage={hasImage}
           img={item.img}
           date={item.date}
@@ -17,6 +16,7 @@ const MenuPosts = ({ data, hasImage }) => {
           desc={item.desc}
           writer={item.writer}
           writerImg={item.writerImg}
+          home={home}
         />
       ))}
     </div>
