@@ -1,10 +1,8 @@
 import React from "react";
 import MenuPosts from "./MenuPosts";
 import MenuCategories from "./MenuCategories";
-import blogs from "@/utils/data";
 
-const Menu = async ({ home }) => {
-  const data = await blogs();
+const Menu = async ({ home, data }) => {
   return (
     <div>
       <h2 className="text-[#626262] dark:text-[#a6a6a6]">What&rsquo;s Hot</h2>

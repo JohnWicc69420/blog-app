@@ -43,7 +43,7 @@ const Page = async ({ params }) => {
           <Comments />
         </div>
         <div className="menu md:flex hidden">
-          <Menu home={false} />
+          <Menu home={false} data={data} />
         </div>
       </div>
     </div>

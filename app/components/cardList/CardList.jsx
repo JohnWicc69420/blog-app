@@ -1,9 +1,7 @@
 import React from "react";
 import Cards from "./Cards";
-import blogs from "../../../utils/data";
 
-const CardList = async ({ slug, isCat }) => {
-  const data = await blogs();
+const CardList = async ({ slug, isCat, data }) => {
   let catData;
   {
     catData =

@@ -1,3 +1,4 @@
+import blogs from "@/utils/data";
 import CardList from "../../components/cardList/CardList";
 import Menu from "../../components/menu/Menu";
 
@@ -10,8 +11,9 @@ const colors = [
   { cat: "Coding", bgColor: "bg-[#9A9AD6]" },
 ];
 
-const page = ({ params }) => {
+const page = async ({ params }) => {
   const { slug } = params;
+  const data = await blogs();
   let catColor, bg;
   catColor = colors.find((item) => item.cat === slug);
   bg = catColor.bgColor;
@@ -25,10 +27,10 @@ const page = ({ params }) => {
       </h1>
       <div className=" flex items-start w-full pt-8 gap-6">
         <div className=" lg:w-8/12 w-full">
-          <CardList slug={slug} isCat={true} />
+          <CardList slug={slug} isCat={true} data={data} />
         </div>
         <div className=" w-4/12 hidden lg:block">
-          <Menu />
+          <Menu data={data} />
         </div>
       </div>
     </div>

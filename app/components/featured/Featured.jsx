@@ -1,12 +1,11 @@
 import React from "react";
-import blogs from "@/utils/data";
 import Link from "next/link";
 
-const Featured = async () => {
+const Featured = ({ data }) => {
   const randNumber = Math.floor(Math.random() * 18);
-  const data = await blogs();
   const post = data[randNumber];
   const id = post._id;
+
   return (
     <>
       <div className="h-full md:pt-10 pt-4 mb-12">
