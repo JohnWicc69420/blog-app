@@ -22,19 +22,19 @@ const data = [
   },
   {
     id: 4,
-    img: "/travel.png",
+    img: "/bali.png",
     title: "Travel",
     bgColor: "bg-[#FCE1DA]",
   },
   {
     id: 5,
-    img: "/culture.png",
+    img: "/heritage.png",
     title: "Culture",
     bgColor: "bg-[#FDE8D1]",
   },
   {
     id: 6,
-    img: "/coding.png",
+    img: "/js.png",
     title: "Coding",
     bgColor: "bg-[#DDDDFD]",
   },
