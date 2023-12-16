@@ -26,9 +26,7 @@ const Page = async ({ params }) => {
       throw error;
     }
   };
-
   const { id } = params;
-
   try {
     const { blogs } = await getData();
     const blogData = blogs.filter((item) => item._id === id);
@@ -68,7 +66,7 @@ const Page = async ({ params }) => {
             <Comments />
           </div>
           <div className="menu md:flex hidden">
-            <Menu home={false} data={blogs} />
+            <Menu data={blogs} />
           </div>
         </div>
       </div>

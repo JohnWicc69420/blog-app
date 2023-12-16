@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-const MenuCard = ({ id, cat, hasImage, img, date, title, writer, home }) => {
+const MenuCard = ({ id, cat, hasImage, img, date, title, writer }) => {
   const colors = [
     "bg-[#F0755D]",
     "bg-[#78C7C7]",
@@ -33,10 +33,9 @@ const MenuCard = ({ id, cat, hasImage, img, date, title, writer, home }) => {
 
   const randNum = Math.floor(Math.random() * 26);
   const color = colors[randNum];
-  const URL = home ? `blog/${id}` : `${id}`;
 
   return (
-    <Link href={`${URL}`}>
+    <Link href={`/blog/${id}`}>
       <div className="flex items-center gap-4 h-full w-full cursor-pointer">
         {hasImage && (
           <div>

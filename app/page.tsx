@@ -43,7 +43,7 @@ export default async function Home() {
                   <CardList slug={null} isCat={false} data={data} />
                 </div>
                 <div className=" w-4/12 hidden lg:block">
-                  <Menu home={true} data={data} />
+                  <Menu data={data} />
                 </div>
               </div>
             </div>
