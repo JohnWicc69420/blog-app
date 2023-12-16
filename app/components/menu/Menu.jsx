@@ -13,7 +13,7 @@ const Menu = async ({ home, data }) => {
       <h2 className="text-[#626262] dark:text-[#a6a6a6]"> Discover by topic</h2>
       <h1 className="text-3xl font-bold mb-8 pt-1">Categories</h1>
       <div className="xl:mb-16 mb-8">
-        <MenuCategories data={data} />
+        <MenuCategories />
       </div>
       <h2 className="text-[#626262] dark:text-[#a6a6a6]">
         Chosen by the editor

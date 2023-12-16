@@ -1,4 +1,3 @@
-import blogs from "@/utils/data";
 import CardList from "../../components/cardList/CardList";
 import Menu from "../../components/menu/Menu";
 
@@ -13,7 +12,20 @@ const colors = [
 
 const page = async ({ params }) => {
   const { slug } = params;
-  const data = await blogs();
+  const BASE_URL = "https://main--blog-app64209.netlify.app";
+  const LOCAL_HOST = "http://localhost:3000";
+  const getData = async () => {
+    try {
+      const res = await fetch(`${BASE_URL}/api/blogs`, {
+        cache: "no-store",
+      });
+      return res.json();
+    } catch (error) {
+      console.log("Could Not Fetch Blogs: ", error);
+    }
+  };
+  const { blogs } = await getData();
+  const data = await blogs;
   let catColor, bg;
   catColor = colors.find((item) => item.cat === slug);
   bg = catColor.bgColor;

@@ -7,10 +7,11 @@ import Menu from "../../components/menu/Menu";
 import Comments from "../../components/comments/Comments";
 
 const Page = async ({ params }) => {
+  const BASE_URL = "https://main--blog-app64209.netlify.app";
   const LOCAL_HOST = "http://localhost:3000";
   const getData = async () => {
     try {
-      const res = await fetch(`${LOCAL_HOST}/api/blogs`, {
+      const res = await fetch(`${BASE_URL}/api/blogs`, {
         cache: "no-store",
       });
       return res.json();

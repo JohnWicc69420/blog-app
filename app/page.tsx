@@ -2,10 +2,23 @@ import Featured from "./components/featured/Featured";
 import CategoryList from "./components/categoryList/CategoryList";
 import CardList from "./components/cardList/CardList";
 import Menu from "./components/menu/Menu";
-import blogs from "@/utils/data";
 
 export default async function Home() {
-  const data = await blogs();
+  const BASE_URL = "https://main--blog-app64209.netlify.app";
+  const LOCAL_HOST = "http://localhost:3000";
+  const getData = async () => {
+    try {
+      const res = await fetch(`${BASE_URL}/api/blogs`, {
+        cache: "no-store",
+      });
+      return res.json();
+    } catch (error) {
+      console.log("Could Not Fetch Blogs: ", error);
+    }
+  };
+
+  const { blogs } = await getData();
+  const data = await blogs;
 
   if (!data) {
     return (
