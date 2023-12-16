@@ -1,4 +1,5 @@
 const BASE_URL = "https://main--blog-app64209.netlify.app";
+const LOCAL_HOST = "http://localhost:3000";
 const getData = async () => {
   try {
     const res = await fetch(`${BASE_URL}/api/blogs`, {

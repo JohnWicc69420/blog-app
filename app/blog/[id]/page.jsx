@@ -5,12 +5,23 @@ import ProfileCard from "../ProfileCard";
 import Image from "next/image";
 import Menu from "../../components/menu/Menu";
 import Comments from "../../components/comments/Comments";
-import blogs from "../../../utils/data";
 
 const Page = async ({ params }) => {
+  const LOCAL_HOST = "http://localhost:3000";
+  const getData = async () => {
+    try {
+      const res = await fetch(`${LOCAL_HOST}/api/blogs`, {
+        cache: "no-store",
+      });
+      return res.json();
+    } catch (error) {
+      console.log("Could Not Fetch Blogs: ", error);
+    }
+  };
+
   const { id } = params;
-  const data = await blogs();
-  const blogData = data.filter((item) => item._id == id);
+  const { blogs } = await getData();
+  const blogData = blogs.filter((item) => item._id == id);
 
   return (
     <div className="flex flex-col lg:gap-12 gap-10 pt-8 dark:text-[#ddd] dark:bg-[#0f172a] px-8 md:px-20 xl:px-40 2xl:px-60">
@@ -43,7 +54,7 @@ const Page = async ({ params }) => {
           <Comments />
         </div>
         <div className="menu md:flex hidden">
-          <Menu home={false} data={data} />
+          <Menu home={false} data={blogs} />
         </div>
       </div>
     </div>
