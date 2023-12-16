@@ -1,7 +1,7 @@
 import React from "react";
 import Cards from "./Cards";
 
-const CardList = async ({ slug, isCat, data }) => {
+const CardList = ({ slug, isCat, data }) => {
   let catData;
   {
     catData =

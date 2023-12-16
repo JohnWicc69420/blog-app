@@ -11,36 +11,51 @@ export default async function Home() {
       const res = await fetch(`${BASE_URL}/api/blogs`, {
         cache: "no-store",
       });
+      if (!res.ok) {
+        throw new Error(`Failed to fetch data. Status: ${res.status}`);
+      }
       return res.json();
     } catch (error) {
-      console.log("Could Not Fetch Blogs: ", error);
+      console.error("Could Not Fetch Blogs: ", error);
+      throw error;
     }
   };
 
-  const { blogs } = await getData();
-  const data = await blogs;
+  try {
+    const { blogs } = await getData();
+    const data = blogs;
 
-  if (!data) {
+    if (!data) {
+      return (
+        <>
+          <h1 className="text-3xl p-3">Loading...</h1>
+        </>
+      );
+    } else {
+      return (
+        <>
+          <>
+            <div className="flex dark:text-[#ddd] dark:bg-[#0f172a] px-8 md:px-20 xl:px-40 2xl:px-60 flex-col items-start h-full">
+              <Featured />
+              <CategoryList />
+              <div className="flex items-start w-full gap-6">
+                <div className=" lg:w-8/12 w-full">
+                  <CardList slug={null} isCat={false} data={data} />
+                </div>
+                <div className=" w-4/12 hidden lg:block">
+                  <Menu home={true} data={data} />
+                </div>
+              </div>
+            </div>
+          </>
+        </>
+      );
+    }
+  } catch (error) {
+    console.error("Error in Home component: ", error);
     return (
       <>
-        <h1 className="text-3xl p-3">Loading...</h1>
-      </>
-    );
-  } else {
-    return (
-      <>
-        <div className="flex dark:text-[#ddd] dark:bg-[#0f172a] px-8 md:px-20 xl:px-40 2xl:px-60 flex-col items-start h-full">
-          <Featured />
-          <CategoryList />
-          <div className="flex items-start w-full gap-6">
-            <div className=" lg:w-8/12 w-full">
-              <CardList slug={null} isCat={false} data={data} />
-            </div>
-            <div className=" w-4/12 hidden lg:block">
-              <Menu home={true} data={data} />
-            </div>
-          </div>
-        </div>
+        <h1 className="text-3xl p-3">Error loading data</h1>
       </>
     );
   }

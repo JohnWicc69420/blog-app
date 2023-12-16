@@ -19,13 +19,19 @@ const page = async ({ params }) => {
       const res = await fetch(`${BASE_URL}/api/blogs`, {
         cache: "no-store",
       });
+
+      if (!res.ok) {
+        throw new Error(`Failed to fetch data. Status: ${res.status}`);
+      }
+
       return res.json();
     } catch (error) {
-      console.log("Could Not Fetch Blogs: ", error);
+      console.error("Could not fetch blogs:", error);
+      throw error;
     }
   };
   const { blogs } = await getData();
-  const data = await blogs;
+  const data = blogs;
   let catColor, bg;
   catColor = colors.find((item) => item.cat === slug);
   bg = catColor.bgColor;
