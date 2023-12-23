@@ -2,7 +2,7 @@
 import { useState } from "react";
 import Card from "../card/Card";
 
-const Cards = ({ catData, isCat }) => {
+const Cards = ({ catData, isCat, buttons }) => {
   const [prevNum, setPrevNum] = useState(0);
   const [nextNum, setNextNum] = useState(5);
   return (
@@ -23,38 +23,40 @@ const Cards = ({ catData, isCat }) => {
           />
         ))}
       </div>
-      <div className="buttons flex items-center justify-between my-12">
-        <button
-          onClick={
-            prevNum >= 5
-              ? () => {
-                  setPrevNum(prevNum - 5);
-                  setNextNum(nextNum - 5);
-                }
-              : null
-          }
-          className="bg-[#C92C39] py-3 px-5 text-base text-[#fff] 
+      {buttons && (
+        <div className="buttons flex items-center justify-between my-12">
+          <button
+            onClick={
+              prevNum >= 5
+                ? () => {
+                    setPrevNum(prevNum - 5);
+                    setNextNum(nextNum - 5);
+                  }
+                : null
+            }
+            className="bg-[#C92C39] py-3 px-5 text-base text-[#fff] 
         w-[125px] hover:bg-[#9F202B] "
-        >
-          Previous
-        </button>
-        <button
-          onClick={
-            isCat
-              ? null
-              : nextNum <= 15
-              ? () => {
-                  setPrevNum(prevNum + 5);
-                  setNextNum(nextNum + 5);
-                }
-              : null
-          }
-          className="bg-[#C92C39] py-3 px-5 text-base text-[#fff] 
+          >
+            Previous
+          </button>
+          <button
+            onClick={
+              isCat
+                ? null
+                : nextNum <= 15
+                ? () => {
+                    setPrevNum(prevNum + 5);
+                    setNextNum(nextNum + 5);
+                  }
+                : null
+            }
+            className="bg-[#C92C39] py-3 px-5 text-base text-[#fff] 
         w-[110px] hover:bg-[#9F202B] "
-        >
-          Next
-        </button>
-      </div>
+          >
+            Next
+          </button>
+        </div>
+      )}
     </>
   );
 };

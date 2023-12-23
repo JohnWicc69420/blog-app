@@ -36,7 +36,7 @@ const Page = async ({ params }) => {
     }
 
     return (
-      <div className="flex flex-col lg:gap-12 gap-10 pt-8 dark:text-[#ddd] dark:bg-[#0f172a] px-8 md:px-20 xl:px-40 2xl:px-60">
+      <div className="flex flex-col lg:gap-12 gap-10 pt-8 dark:text-[#ddd] dark:bg-[#0f172a] px-4 md:px-20 xl:px-40 2xl:px-60">
         <div className="top flex md:flex-row flex-col items-center gap-6 justify-between">
           <div className=" md:w-2/5">
             <h1 className="text-2xl line-clamp-2 font-semibold lg:text-4xl xl:font-extrabold lg:font-bold xl:leading-[45px] mb-4 lg:mb-12">

@@ -58,15 +58,6 @@ const Comments = () => {
     <>
       <div className="text-[#626262] dark:text-[#a6a6a6] flex flex-col items-start gap-10">
         <h1 className="text-3xl font-bold">Comments</h1>
-        <div className="text-[#626262] dark:text-[#ddd] mb-2">
-          {status === "unauthenticated" ? (
-            <Link className="border-b-[2px] border-gray-600 pb-[2px]" href="/">
-              Login to write a comment
-            </Link>
-          ) : (
-            <span>Write a comment</span>
-          )}
-        </div>
         <div className="pb-6 flex flex-col gap-10">
           {commentsData.map((item) => (
             <CommentBox

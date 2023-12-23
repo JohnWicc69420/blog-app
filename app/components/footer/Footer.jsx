@@ -4,7 +4,7 @@ import FooterLinks from "./FooterLinks";
 
 const Footer = () => {
   return (
-    <div className="pb-6 flex items-center justify-between px-8 md:px-20 xl:px-40 2xl:px-60 dark:bg-[#0f172a] dark:text-[#ddd] gap-8">
+    <div className="pb-6 flex items-center justify-between px-4 md:px-20 xl:px-40 2xl:px-60 dark:bg-[#0f172a] dark:text-[#ddd] gap-8">
       <div className=" lg:w-[70%] w-full flex flex-col items-start gap-5">
         <div className="flex items-center gap-3">
           <div className="flex items-center justify-center rounded-full overflow-hidden w-[40px] h-[40px]">

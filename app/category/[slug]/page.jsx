@@ -37,7 +37,7 @@ const page = async ({ params }) => {
   bg = catColor.bgColor;
 
   return (
-    <div className="dark:text-[#ddd] dark:bg-[#0f172a] px-8 md:px-20 xl:px-40 2xl:px-60 pt-8">
+    <div className="dark:text-[#ddd] dark:bg-[#0f172a] px-4 md:px-20 xl:px-40 2xl:px-60 pt-8">
       <h1
         className={`text-3xl font-bold dark:text-[#fff] text-[#fff] w-full text-center py-1 ${bg}`}
       >
@@ -45,7 +45,7 @@ const page = async ({ params }) => {
       </h1>
       <div className=" flex items-start w-full pt-8 gap-6">
         <div className=" lg:w-8/12 w-full">
-          <CardList slug={slug} isCat={true} data={data} />
+          <CardList slug={slug} isCat={true} data={data} buttons={false} />
         </div>
         <div className=" w-4/12 hidden lg:block">
           <Menu data={data} />
