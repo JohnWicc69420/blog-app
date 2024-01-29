@@ -12,7 +12,7 @@ const Page = async ({ params }) => {
 
   const getData = async () => {
     try {
-      const res = await fetch(`${BASE_URL}/api/blogs`, {
+      const res = await fetch(`${LOCAL_HOST}/api/blogs`, {
         cache: "no-store",
       });
 
