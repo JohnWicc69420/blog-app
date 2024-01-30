@@ -47,7 +47,7 @@ export default function Post() {
     <>
       <div
         className="flex screenSize flex-col pt-8 
-      dark:text-[#ddd] dark:bg-[#0f172a] px-4 md:px-20 xl:px-40 2xl:px-60 items-center"
+      dark:text-[#ddd] bg-[#fff] dark:bg-[#0f172a] px-4 md:px-20 xl:px-40 2xl:px-60 items-center"
       >
         <form
           onSubmit={handleFormSubmit}

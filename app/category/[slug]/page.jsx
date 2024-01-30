@@ -37,7 +37,7 @@ const page = async ({ params }) => {
   bg = catColor.bgColor;
 
   return (
-    <div className="dark:text-[#ddd] screenSize dark:bg-[#0f172a] px-4 md:px-20 xl:px-40 2xl:px-60 pt-8">
+    <div className="dark:text-[#ddd] screenSize bg-[#fff] dark:bg-[#0f172a] px-4 md:px-20 xl:px-40 2xl:px-60 pt-8">
       <h1
         className={`text-3xl font-bold dark:text-[#fff] text-[#fff] w-full text-center py-1 ${bg}`}
       >
