@@ -54,7 +54,7 @@ export default function Post() {
           className="flex flex-col gap-6 w-full"
         >
           <input
-            className=" dark:bg-[#0f172a] text-4xl font-medium h-full outline-none"
+            className=" dark:bg-[#0f172a] text-4xl p-3 font-medium h-full outline-none"
             type="text"
             id="title"
             name="title"
