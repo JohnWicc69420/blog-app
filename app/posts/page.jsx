@@ -10,7 +10,7 @@ export default function Posts() {
     <>
       {data.length > 0 ? (
         <div
-          className="flex screenSize flex-col lg:gap-12 gap-10 pt-8
+          className="flex screenSize flex-col lg:gap-12 gap-10 pt-6
        dark:text-[#ddd] dark:bg-[#0f172a] bg-[#fff] px-4 md:px-20 xl:px-40 2xl:px-60 w-full pb-5"
         >
           {data.map((post, index) => (
@@ -24,12 +24,13 @@ export default function Posts() {
         </div>
       ) : (
         <div
-          className="flex screenSize flex-row  pt-8
+          className="flex screenSize flex-col
        dark:text-[#ddd] dark:bg-[#0f172a] bg-[#fff] w-full items-center
         justify-center px-4 md:px-20 xl:px-40 2xl:px-60 text-2xl font-semibold"
         >
-          No blogs found, Create one&nbsp;
+          No blogs found!
           <span>
+            <span>Create one&nbsp;</span>
             <Link href="/post" className=" underline">
               here
             </Link>
