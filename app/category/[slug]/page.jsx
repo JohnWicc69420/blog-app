@@ -16,7 +16,7 @@ const page = async ({ params }) => {
   const LOCAL_HOST = "http://localhost:3000";
   const getData = async () => {
     try {
-      const res = await fetch(`${LOCAL_HOST}/api/blogs`, {
+      const res = await fetch(`${BASE_URL}/api/blogs`, {
         cache: "no-store",
       });
 
