@@ -7,7 +7,7 @@ import Menu from "../../components/menu/Menu";
 import Comments from "../../components/comments/Comments";
 
 const Page = async ({ params }) => {
-  const BASE_URL = "https://main--blog-app64209.netlify.app";
+  const BASE_URL = "https://blog-app-tau-ten.vercel.app";
   const LOCAL_HOST = "http://localhost:3000";
 
   const getData = async () => {

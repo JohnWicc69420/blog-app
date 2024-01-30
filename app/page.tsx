@@ -4,7 +4,7 @@ import CardList from "./components/cardList/CardList";
 import Menu from "./components/menu/Menu";
 
 export default async function Home() {
-  const BASE_URL = "https://main--blog-app64209.netlify.app";
+  const BASE_URL = "https://blog-app-tau-ten.vercel.app";
   const LOCAL_HOST = "http://localhost:3000";
   const getData = async () => {
     try {
