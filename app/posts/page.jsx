@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 import Card from "./Card";
 import Link from "next/link";
 
-export default function posts() {
+export default function Posts() {
   const data = useSelector((state) => state.posts);
 
   return (

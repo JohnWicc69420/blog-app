@@ -4,7 +4,7 @@ import ProfileCard from "../ProfileCard";
 import Image from "next/image";
 import { useSelector } from "react-redux";
 
-export default function posts({ params }) {
+export default function Posts({ params }) {
   const { id } = params;
   const posts = useSelector((state) => state.posts);
   const post = posts.find((item) => item.id == id);
