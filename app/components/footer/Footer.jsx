@@ -14,7 +14,7 @@ const Footer = () => {
             LUMINA
           </span>
         </div>
-        <div className=" line-clamp-3 text-[#626262] dark:text-[#a6a6a6] text-sm xl:text-base w-[calc(100%-10%)]">
+        <div className=" line-clamp-3 text-[#626262] dark:text-[#a6a6a6] text-sm xl:text-base w-[90%]">
           Lumina is a dynamic blog maker that empowers users to effortlessly
           create and customize their online narratives. With its user-friendly
           interface and diverse range of features, Lumina ensures a seamless and

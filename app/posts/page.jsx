@@ -11,7 +11,7 @@ export default function posts() {
       {data.length > 0 ? (
         <div
           className="flex screenSize flex-col lg:gap-12 gap-10 pt-8
-       dark:text-[#ddd] dark:bg-[#0f172a] px-4 md:px-20 xl:px-40 2xl:px-60 w-full"
+       dark:text-[#ddd] dark:bg-[#0f172a] px-4 md:px-20 xl:px-40 2xl:px-60 w-full pb-5"
         >
           {data.map((post, index) => (
             <Card
@@ -25,7 +25,8 @@ export default function posts() {
       ) : (
         <div
           className="flex screenSize flex-row  pt-8
-       dark:text-[#ddd] dark:bg-[#0f172a] px-4 md:px-20 xl:px-40 2xl:px-60 text-2xl font-semibold"
+       dark:text-[#ddd] dark:bg-[#0f172a] w-full items-center
+        justify-center px-4 md:px-20 xl:px-40 2xl:px-60 text-2xl font-semibold"
         >
           No blogs found, Create one&nbsp;
           <span>

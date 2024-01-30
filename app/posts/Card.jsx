@@ -14,30 +14,31 @@ const Card = ({ id, title, desc }) => {
   return (
     <>
       {" "}
-      <Link href={`/posts/${id}`}>
-        <div className="flex  md:gap-6 w-full items-center px-6 py-3 bg-[#172937] shadow-xl rounded-xl">
-          <div className="right flex flex-col items-start ">
+      <div
+        className="flex md:gap-6 w-full items-center px-6 py-3 cursor-pointer dark:bg-[#0d1424] bg-[#fcfcfc] 
+      shadow-md hover:scale-103 transition-card rounded-xl"
+      >
+        <Link href={`/posts/${id}`} className=" flex-1">
+          <div className="right flex w-full flex-col items-start ">
             <div
-              className=" text-xl line-clamp-1 font-semibold xl:text-2xl
-             xl:font-bold mb-4 overflow-ellipsis md:w-[400px] w-[200px]"
+              className=" text-xl line-clamp-1 text-[#626262] dark:text-[#ddd] font-semibold xl:text-2xl
+             xl:font-bold mb-4 overflow-ellipsis md:w-[400px] w-[150px]"
             >
               {title}
             </div>
             <div
               className=" line-clamp-1 text-[#626262] dark:text-[#a6a6a6]
-             text-sm md:text-base md:w-[400px] w-[200px] overflow-ellipsis"
+             text-sm md:text-base md:w-[400px] w-[150px] overflow-ellipsis"
             >
               {desc}
             </div>
-          </div>
-          <div className="ml-auto text-3xl">
-            <BsTrash
-              onClick={handleDeleteClick}
-              className="cursor-pointer hover:scale-110"
-            />
-          </div>
-        </div>{" "}
-      </Link>
+          </div>{" "}
+        </Link>
+
+        <div className="ml-auto w-fit flex dark:text-[#ddd] text-[#626262] justify-end text-4xl">
+          <BsTrash onClick={handleDeleteClick} className=" hover:scale-110" />
+        </div>
+      </div>{" "}
     </>
   );
 };

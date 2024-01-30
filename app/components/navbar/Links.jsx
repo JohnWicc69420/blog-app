@@ -15,7 +15,7 @@ const Links = () => {
         <Link href="/">About</Link>
         <Link href="/posts">My Blogs</Link>
         <span className=" bg-[#33762D] px-5 py-2 rounded-full text-[#fff]">
-          <Link href="/post">Write</Link>
+          <Link href="/post">Create</Link>
         </span>
       </div>
       {open ? (
@@ -51,7 +51,7 @@ const Links = () => {
           <Link href="/">Contact</Link>
           <Link href="/">About</Link>
           <Link href="/posts">My Blogs</Link>
-          <Link href="/post">Write</Link>
+          <Link href="/post">Create</Link>
         </div>
       )}
     </>

@@ -99,7 +99,7 @@ export default function Post() {
             className={`${
               message ? "alert" : ""
             } text-center mt-8 text-[#fff] py-2 px-6 transition-opacity
-             rounded-full bg-gray-100/[0.3] w-fit`}
+             rounded-full dark:bg-gray-100/[0.3] bg-gray-400/[0.9] w-fit`}
           >
             {message}
           </div>
